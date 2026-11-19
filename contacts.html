@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXED — Контакти | Покатаємось разом</title>
+    <!-- Мета-теги для пошукових систем -->
+    <meta name="description" content="Контакти: телефон, Telegram і форма зворотного зв'язку. Шукайте мене на дорозі на Вишгород.">
+    <meta name="keywords" content="контакти, фікс, Telegram, Вишгород, покатушки">
+    <meta name="author" content="Гайдаєнко Артем">
+    <meta name="copyright" content="Гайдаєнко Артем, 2026">
+    <!-- Іконка сайту -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Підключення зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Початок шапки -->
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">FIX<span>ED</span></a>
+            <p class="slogan">Одна передача — повний контроль</p>
+        </div>
+    </header>
+    <!-- Кінець шапки -->
+
+    <!-- Початок навігації -->
+    <nav class="site-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Історія</a></li>
+                <li><a href="gallery.html">Мій фікс</a></li>
+                <li><a href="tips.html">Поради</a></li>
+                <li><a href="contacts.html" class="active">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Кінець навігації -->
+
+    <!-- Заголовок сторінки -->
+    <div class="page-title">
+        <h1>Контакти</h1>
+        <p>Пишіть, телефонуйте або просто приєднуйтесь на дорозі</p>
+    </div>
+
+    <!-- Початок основного контенту: три блоки -->
+    <main class="content">
+
+        <!-- Блок 1: де знайти (текст + карта через iframe) -->
+        <section class="block">
+            <h2>Де мене знайти</h2>
+            <p>Найчастіше я катаюся дорогою на Вишгород. Шукайте райдера в чорному костюмі на чорно-червоному фіксі без гальм — це я. Якщо хочете проїхатися разом, напишіть заздалегідь, і ми домовимося про час і місце старту.</p>
+            <p>Спільні покатушки — найкращий спосіб познайомитися з фіксом ближче. Я охоче розповім, як підібрати передачу, як навчитися скіду і як безпечно рухатися містом. Катаємося у спокійному темпі, нікого не залишаємо позаду, а зупинки робимо там, де всім зручно.</p>
+            <p>Що взяти з собою: шолом (обов'язково), воду, зарядений телефон і світло, якщо виїжджаємо ввечері. Велосипед може бути будь-який — фікс не обов'язковий, головне справний. Перед виїздом перевірте тиск у колесах і натяг ланцюга. Якщо погода погана, поїздку переносимо: про це я напишу в Telegram.</p>
+            <p>Питання щодо фікса, деталей або маршрутів можна також надіслати через форму на цій сторінці — відповім, щойно побачу. Найшвидше відповідаю в Telegram, тож для термінових питань краще писати туди. Телефонуйте, якщо домовляємося про зустріч у день поїздки або щось змінилося в останній момент. Новачкам я завжди радий: кожен колись робив свою першу поїздку на фіксі, і підтримка поруч робить її набагато простішою.</p>
+            <p>Не впевнені, чи готові до фікса? Спершу загляньте в <a href="tips.html">поради для новачків</a>.</p>
+            <!-- Вбудована карта: тег iframe завантажує сторінку Google Maps -->
+            <iframe class="map" title="Карта: дорога на Вишгород" src="https://maps.google.com/maps?q=%D0%92%D0%B8%D1%88%D0%B3%D0%BE%D1%80%D0%BE%D0%B4&amp;z=11&amp;output=embed"></iframe>
+        </section>
+
+        <!-- Блок 2: контакти (перелік) -->
+        <section class="block">
+            <h2>Зв'язок</h2>
+            <ul>
+                <li><strong>Телефон:</strong> <a href="tel:+380632724677">063 272 46 77</a></li>
+                <li><strong>Telegram:</strong> <a href="https://t.me/tema_gayd" target="_blank" rel="noopener">@tema_gayd</a></li>
+                <li><strong>На дорозі:</strong> траса на Вишгород, чорний костюм, фікс</li>
+            </ul>
+            <div class="table-wrap">
+                <table>
+                    <caption>Коли мене можна зустріти</caption>
+                    <thead>
+                        <tr>
+                            <th>Коли</th>
+                            <th>Де</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Будні</td>
+                            <td>Дорога на роботу містом</td>
+                        </tr>
+                        <tr>
+                            <td>Вечори, вихідні</td>
+                            <td>Покатушки, дорога на Вишгород</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Блок 3: форма зворотного зв'язку (без серверної обробки) -->
+        <section class="block">
+            <h2>Напишіть мені</h2>
+            <form action="#" method="get">
+                <div class="form-row">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="topic">Тема</label>
+                    <select id="topic" name="topic">
+                        <option value="ride">Покататися разом</option>
+                        <option value="advice">Порада щодо фікса</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення"></textarea>
+                </div>
+                <button type="submit" class="btn">Надіслати</button>
+            </form>
+        </section>
+
+    </main>
+    <!-- Кінець основного контенту -->
+
+    <!-- Початок футера -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Гайдаєнко Артем</p>
+            <p>Telegram: <a href="https://t.me/tema_gayd" target="_blank" rel="noopener">@tema_gayd</a></p>
+            <p>Сайт створено: <time datetime="2026-11-18">18.11.2026</time></p>
+        </div>
+    </footer>
+    <!-- Кінець футера -->
+
+</body>
+</html>
